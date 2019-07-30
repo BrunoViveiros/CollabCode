@@ -3,8 +3,8 @@
 É uma linguagem de marcação que tem as seguintes responsabilidades:
 
 - Conteúdo
-- Semântico (tags);
-
+- Semântico (tags)
+- Estrutura
 
 * `<h1>` - heading 1 - 6
 Usamos ele quando queremos definir títulos
@@ -15,3 +15,10 @@ Usamos ela para definir a navegação do usuario. Se você tem um texto que voc�
 ```
 <a href="http://collabcode.training">CollabCode</a>
 ```
+
+
+#CSS
+
+É uma linguagem de estilo, isso quer dizer que ela tem as seguintes responsabilidades:
+
+- Visual
