@@ -21,4 +21,9 @@ nav {
 a {
   text-decoration: none;
   color: inherit;
+  margin-right: 60px;
+}
+
+#last {
+  margin-right: 0;
 }
