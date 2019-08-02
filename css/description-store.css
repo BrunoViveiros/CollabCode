@@ -1,0 +1,21 @@
+.description-store {
+  color: #FFF;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.dTitle {
+  font-size: 25px;
+}
+
+.dPrice {
+  font-size: 20px;
+}
+
+.dDescription {
+  font-size: 18px;
+}
+
+.dDescription a {
+  text-decoration: none;
+  color: inherit;
+}
