@@ -18,6 +18,22 @@
   float: right;
 }
 
+.header-store [type="search"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  font-family: Arial, 'Roboto', sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  width: 358px;
+  margin-right: 65px;
+  color: inherit;
+}
+
+.header-store [type="search"]::placeholder {
+  color: inherit;
+}
+
 .header-store .action {
   text-decoration: none;
   color: inherit;
