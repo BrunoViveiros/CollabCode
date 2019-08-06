@@ -15,12 +15,22 @@
   cursor: pointer;
 }
 
+.button-store:hover {
+  background-color: #FFF;
+  color: #252c41;
+}
+
 .button-store.-second {
   background-color: transparent;
   border: 2px solid #FFF;
   width: 218px;
   line-height: 56px;
   margin-right: 38px;
+}
+
+.button-store.-second:hover {
+  background-color: #FFF;
+  color: #e24647;
 }
 
 .button-store > button,
