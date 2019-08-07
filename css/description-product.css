@@ -19,11 +19,22 @@
   top: 8px;
   left: -47px;
   cursor: pointer;
+  
+}
+
+.description-product > .item.-heart:hover {
+  transform: scale(1.1) translateX(-100%) ;
+  transition: all 200ms ease-out;
 }
 
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.description-product > .item.-star > img:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease-out;
 }
 
 .description-product > .item.-star + .item {
