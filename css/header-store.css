@@ -47,14 +47,15 @@
   position: absolute;
   bottom: -3px;
   left: 0;
-  widows: 0px;
-  height: 3px;
-  background: #FFF;
-  transition: 0.2s;
+  width: 0px;
+  height: 2px;
+  background: #FFF; 
 }
+
 .header-store .action:hover::before {
-  width: 102%;
+  width: 102%; 
 }
+
 .header-store .action.-last {
   margin-right: 0;
 }
