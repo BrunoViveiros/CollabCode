@@ -17,10 +17,6 @@
   margin-bottom: 10px;
 }
 
-.description-product > .item.-star > img {
-  cursor: pointer;
-}
-
 .description-product > .item.-star + .item {
   margin-left: 7px;
 }
