@@ -49,11 +49,12 @@
   left: 0;
   width: 0px;
   height: 2px;
-  background: #FFF; 
+  background: #FFF;
+  transition: width 200ms ease-in-out;
 }
 
 .header-store .action:hover::before {
-  width: 102%; 
+  width: 102%;
 }
 
 .header-store .action.-last {
