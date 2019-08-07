@@ -36,11 +36,25 @@
 }
 
 .header-store .action {
+  position: relative;
   text-decoration: none;
   color: inherit;
   margin-right: 60px;
 }
 
+.header-store .action::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  widows: 0px;
+  height: 3px;
+  background: #FFF;
+  transition: 0.2s;
+}
+.header-store .action:hover::before {
+  width: 102%;
+}
 .header-store .action.-last {
   margin-right: 0;
 }
