@@ -48,3 +48,14 @@
   color: inherit;
   text-decoration: inherit;
 }
+
+@media (max-width: 600px) {
+  .button-store.-second {
+    margin: 0;
+  }
+
+  .button-store, .button-store.-second  {
+    margin: 10px auto;
+}
+
+}
