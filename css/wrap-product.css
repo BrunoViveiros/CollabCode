@@ -10,30 +10,3 @@
   bottom: 0;
   transform: translateY(calc( 100% + 98px ));
 }
-
-@media (max-width: 1280px) {
-  .wrap-product {
-    display: block;
-    width: 90%;
-    position: relative;
-    margin: auto;
-  }
-
-  .wrap-product > .buttons {
-    position: static;
-    transform: none;
-    display: flex;
-    justify-content: center;
-    width: 530px;
-    margin: 60px auto 0 auto;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .wrap-product > .buttons {
-    flex-direction: column;
-    margin-top: 30px;
-    width: 100%;
-  }
-}
