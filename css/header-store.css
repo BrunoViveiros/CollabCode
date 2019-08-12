@@ -66,13 +66,18 @@
   transform: scale(1);
 }
 
+@media (max-width: 1310px) {
+  .header-store {
+    padding-right: 60px;
+  }
+}
 @media (max-width: 1235px) {
   .header-store > .title {
     float: none;
     text-align: center;
     margin-bottom: 20px;
   }
-
+  
   .header-store > .navigation {
     float: none;
     text-align: center;
@@ -81,6 +86,7 @@
 
 @media (max-width: 955px) {
   .header-store {
+    padding-left: 30px;
     padding-right: 30px;
   }
 
@@ -104,6 +110,7 @@
 @media (max-width: 375px) {
   .header-store {
     padding-left: 16px;
+    padding-right: 16px;
   }
 
   .header-store .action {
