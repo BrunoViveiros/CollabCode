@@ -69,7 +69,6 @@
 @media (max-width: 1310px) {
   .header-store {
     padding-right: 60px;
-    margin-bottom: 80px;
   }
 }
 @media (max-width: 1235px) {
@@ -89,7 +88,6 @@
   .header-store {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 30px;
   }
 
   .header-store [type="search"] {
@@ -121,9 +119,6 @@
 }
 
 @media (max-width: 335px) {
-  .header-store {
-    margin-bottom: 10px;
-  }
   .header-store > .navigation {
     display: none;
   }
