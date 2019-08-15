@@ -1,3 +1,7 @@
-const $second = document.querySelector('.-second')
+const $second = document.querySelector('.-second');
 
-console.log($second)
+$second.addEventListener('click', handleClick);
+
+function handleClick() {
+  console.log('clicou!');
+}
