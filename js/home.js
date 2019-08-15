@@ -1,3 +1,4 @@
+let valorInicial = 10;
 const $second = document.querySelector('.-second');
 
 $second.addEventListener('click', handleClick);
@@ -5,5 +6,5 @@ $second.addEventListener('click', handleClick);
 function handleClick() {
   const $carrinho = document.querySelector('.-last');
 
-  $carrinho.textContent = "Mudando valor";
+  $carrinho.textContent = ++valorInicial;
 }
