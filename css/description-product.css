@@ -25,7 +25,7 @@
   background-color: #FFF;
 }
 
-.description-product > .item.-star .icon {
+.description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
 }
