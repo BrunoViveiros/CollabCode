@@ -1,14 +1,13 @@
 const $heart = document.querySelector(".-heart");
-const $firstStar = document.querySelector(".star");
+const $stars = document.querySelectorAll(".star");
 
 $heart.addEventListener("click", handleClickHeart)
-$firstStar.addEventListener("click", handleClickFirstStar)
-
+$stars[0].addEventListener("click", handleClickStar)
 
 function handleClickHeart() {
   $heart.classList.toggle('-active')
 }
 
-function handleClickFirstStar() {
-  $firstStar.classList.toggle("-active")
+function handleClickStar() {
+  $stars[0].classList.toggle('-active')
 }
