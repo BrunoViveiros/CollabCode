@@ -98,8 +98,13 @@
     position: absolute;
     top: 0;
     left: 0;
+    transform: translateX(-88%);
     background-color: #FFF;
     color: #000;
+  }
+
+  .header-store .-active[type="search"] {
+    transform: none;
   }
 }
 
