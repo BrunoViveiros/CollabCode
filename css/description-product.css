@@ -105,13 +105,6 @@
     text-align: center;
   }
 
-  .description-product > .item.-heart {
-    position: relative;
-    transform: none;
-    top: -80px;
-    left: 0;
-  }
-
   .description-product > .item.-star {
     float: left;
     margin-right: 10px;
@@ -126,12 +119,5 @@
   .description-product {
     width: 90%;
     min-width: auto;
-  }
-}
-
-@media (max-width: 465px) {
-  .description-product > .item.-heart {
-    top: -15px;
-    left: 45%;
   }
 }
