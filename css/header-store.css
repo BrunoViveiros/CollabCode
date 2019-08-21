@@ -36,10 +36,6 @@
   color: inherit;
 }
 
-.header-store .icon {
-  display: none;
-}
-
 .header-store .action {
   display: inline-block;
   text-decoration: none;
@@ -113,25 +109,6 @@
     transition: transform 200ms cubic-bezier(0, 0, .96, 1.26);
   }
 
-  .header-store .icon {
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 0;
-    margin: 5px;
-    left: 0;
-    top: 0;
-    opacity: 0.8;
-    transition: margin 200ms cubic-bezier(0, 0, .96, 1.26);
-  }
-
-  .header-store .icon.-active {
-    height: auto;
-  }
-
-  .header-store .icon.-slide {
-    margin-left: 318px;
-  }
 }
 
 @media (max-width: 530px) {
