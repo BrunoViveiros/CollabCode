@@ -1,3 +1,7 @@
+.input-search {
+  display: inline-block;
+}
+
 .input-search > .content {
   background: transparent;
   border: none;
@@ -13,6 +17,10 @@
 
 .input-search > .content::placeholder {
   color: inherit;
+}
+
+.input-search .icon {
+  display: none;
 }
 
 @media (max-width: 955px) {
@@ -31,6 +39,7 @@
     margin-right: 0;
   }
   .input-search > .icon {
+    display: inline-block;
     background-color: #fff;
     box-sizing: border-box;
     width: 40px;
