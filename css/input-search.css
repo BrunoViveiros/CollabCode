@@ -30,12 +30,12 @@
     left: 0;
     vertical-align: middle;
     transform: translateX(calc(-100% + 40px));
-    transition: transform 200ms cubic-bezier(0, 0, .96, 1.26);
+    transition: transform 200ms linear;
   }
 
-  .input-search .-active {
-    transition: transform 200ms linear;
+  .input-search.-active {
     transform: translateX(0);
+    transition: transform 200ms linear;
   }
 
   .input-search > .content {
