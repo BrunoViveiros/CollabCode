@@ -20,17 +20,27 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(-88%);
-    transition: transform 200ms linear;
+    vertical-align: middle;
+/*     transform: translateX(-88%);
+    transition: transform 200ms linear; */
   }
 
   .input-search > .content {
     background-color: #FFF;
     color: #000;
+    margin-right: 0;
+  }
+  .input-search > .icon {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    vertical-align: middle;
   }
 
-  .input-search .content.-active {
+/*   .input-search .content.-active {
     transition: transform 200ms cubic-bezier(0, 0, .96, 1.26);
     transform: translateX(0);
-  }
+  } */
 }
