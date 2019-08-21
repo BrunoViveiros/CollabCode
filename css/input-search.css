@@ -44,7 +44,7 @@
     margin-right: 0;
   }
   .input-search > .icon {
-    display: inline-block;
+    display: none;
     background-color: #fff;
     box-sizing: border-box;
     width: 40px;
@@ -52,6 +52,9 @@
     padding: 8px;
     vertical-align: middle;
   }
+
+  .input-search > .icon.-active {
+    display: inline-block;
 }
 
 @media (max-width: 400px) {
