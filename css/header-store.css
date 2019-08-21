@@ -100,9 +100,3 @@
     margin-right: 8px;
   }
 }
-
-@media (max-width: 335px) {
-  .header-store .action {
-    display: none;
-  }
-}
