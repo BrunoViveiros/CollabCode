@@ -121,6 +121,8 @@
     top: 0;
     left: 0;
     transform: translateX(-100%);
+  
+    transition: transform 400ms 100ms linear;
   }
   
   .header-store .list {
@@ -135,10 +137,16 @@
     transform: translateX(100%);
     transition: transform 300ms linear;
   }
+  
   .header-store .list.-active {
     transform: translateX(0);
   }
   
+  .header-store .list.-active .item.-menu {
+    transform: translateX(0);
+    transition: none;
+  }
+
   .header-store .item {
     display: block;
   }
