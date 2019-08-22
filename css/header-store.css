@@ -19,10 +19,6 @@
   float: right;
 }
 
-.header-store .menu {
-  display: none;
-}
-
 .header-store .item {
   display: inline-block;
   margin-right: 60px;
@@ -113,6 +109,18 @@
 }
 
 @media (max-width: 335px) {
+  .header-store .item.-menu {
+    display: block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/menu.svg');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+    text-indent: -9999px;
+    margin: 0;
+  }
   .header-store .action {
     display: none;
   }
