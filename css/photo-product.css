@@ -1,5 +1,6 @@
 .photo-product {
   display: inline-block;
+  position: relative;
   height: 554px;
   background-color: #fff;
   vertical-align: middle;
@@ -7,6 +8,18 @@
   border-bottom-right-radius: 150px;
   margin-right: 157px;
   padding-left: 100px;
+  box-shadow: 0 0 39px 0 rgba(50, 50, 50, 1.36);
+}
+
+.photo-product::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  z-index: -1;
+  transform: translateX(-99%);
 }
 
 @media (max-width: 1325px) {
