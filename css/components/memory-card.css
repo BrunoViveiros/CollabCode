@@ -8,6 +8,7 @@
   align-items: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   position: relative;
+  margin: 8px;
 }
 
 .memory-card.-front {
@@ -31,4 +32,11 @@
 .memory-card.-front > .icon {
   position: absolute;
   transform: translateY(-10px);
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
 }
