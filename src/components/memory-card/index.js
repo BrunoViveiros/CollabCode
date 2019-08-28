@@ -14,6 +14,8 @@ function createMemoryCard () {
   $wrapCards.insertBefore($memoryCard, null);
   
   $memoryCard.insertAdjacentHTML("afterbegin", $iconCollab);
+
+  $memoryCard.addEventListener('click', () => console.log('click'));
 }
 
 
@@ -34,4 +36,6 @@ $wrapCards.insertBefore($memoryCardFront, null);
 
 
 $memoryCardFront.insertAdjacentHTML("afterbegin", $iconJS);
+
+$memoryCardFront.addEventListener('click', () => console.log('click'));
 }
