@@ -1,8 +1,8 @@
 const $root = document.querySelector('#root');
 
 const $cardsWrapper = createCardsWrapper();
-const $memoryCard = createMemoryCard();
-const $memoryCardFront = createMemoryCard(true);
+const $memoryCard = createMemoryCard("img/icon-collabcode.png", "Gueio mascote da CollabCode", '');
+const $memoryCardFront = createMemoryCard("img/-icon-js.png", "Icone de um livro de JS", "-front");
 
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
@@ -14,4 +14,3 @@ $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardFront);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardFront);
 
 $root.insertAdjacentElement("beforeend", $cardsWrapper);
-
