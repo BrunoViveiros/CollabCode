@@ -1,20 +1,9 @@
-const createMemoryCard = ({ src, alt, nameClass }) => `
-  <article class="memory-card ${nameClass}">
-    <img
-      src="${src}"
-      alt='${alt}'
-      class='icon'
-      onClick="handleClick()"
-    />
-  </article>
-`;
+const memoryCard = () => {
 
-const handleClick = () => console.log('ae');
+const $head = document.querySelector('head');
+const $style = document.createElement('style');
 
-window.onload = () => {
-  const $head = document.querySelector("head");
-  const $styles = document.createElement("style");
-  $styles.textContent = `
+$style.textContent = `
   .memory-card {
     width: 155px;
     height: 155px;
@@ -27,11 +16,11 @@ window.onload = () => {
     position: relative;
     cursor: pointer;
   }
-  
+
   .memory-card.-front {
     background-color: #FFF;
   }
-  
+
   .memory-card.-front::before {
     content: '';
     width: 95px;
@@ -40,18 +29,30 @@ window.onload = () => {
     border-radius: 50%;
     position: absolute;
   }
-  
+
   .memory-card > .icon {
     width: 100px;
     height: 100px;
   }
-  
+
   .memory-card.-front > .icon {
     position: absolute;
     transform: translateY(-10px);
   }
-  
+`;
+
+$head.insertBefore($style, null);
+
+  return ({ src, alt, nameClass }) => `
+    <article class="memory-card ${nameClass}">
+      <img
+        src="${src}"
+        alt='${alt}'
+        class='icon'
+        onClick="handleClick()"
+      />
+    </article>
   `;
-  $head.insertBefore($styles, null);
-  
-}
+};
+
+const handleClick = () => console.log('ae');

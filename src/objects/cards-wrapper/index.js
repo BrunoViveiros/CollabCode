@@ -16,8 +16,8 @@ function createCardsWrapper() {
       margin-bottom: 10px;
     }
   `;
-  $head.insertBefore($styles, null);
 
+  $head.insertBefore($styles, null);
 
   return $cardsWrapper;  
 }
