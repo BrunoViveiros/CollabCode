@@ -78,4 +78,27 @@ $head.insertBefore($style, null);
   `;
 };
 
-const handleClick = $component => $component.classList.toggle("-active");
+let count = 0;
+let $firstComponent;
+
+
+const handleClick = $component => {
+  let active = $component.classList.contains("-active");
+  
+  if (count === 0) {
+    $firstComponent = $component;
+  }
+
+  if (count < 2 && !active) {
+    $component.classList.toggle("-active");
+    count++;
+  }
+
+  if (count >= 2) {
+    setTimeout(() => {
+      $firstComponent.classList.remove("-active");
+      $component.classList.remove("-active");
+      count = 0;
+    }, 2000);
+  }
+}
