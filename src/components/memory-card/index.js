@@ -78,27 +78,21 @@ $head.insertBefore($style, null);
   `;
 };
 
-let count = 0;
-let $firstComponent;
-
-
 const handleClick = $component => {
-  let active = $component.classList.contains("-active");
-  
-  if (count === 0) {
-    $firstComponent = $component;
-  }
-
-  if (count < 2 && !active) {
+  if (qtdActiveMemoryCard < 2) {
     $component.classList.toggle("-active");
-    count++;
   }
 
-  if (count >= 2) {
+  if (qtdActiveMemoryCard === 1) {
     setTimeout(() => {
-      $firstComponent.classList.remove("-active");
-      $component.classList.remove("-active");
-      count = 0;
-    }, 2000);
+      const $activeMemoryCards = document.querySelectorAll('.memory-card.-active');
+
+      $activeMemoryCards.forEach($memoryCard => {
+        $memoryCard.classList.remove("-active");
+      })
+
+      qtdActiveMemoryCard = 0;
+    }, 1500);
   }
 }
+
