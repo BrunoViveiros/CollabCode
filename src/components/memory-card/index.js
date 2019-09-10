@@ -24,11 +24,13 @@ $style.textContent = `
     position: absolute;
   }
 
-  .memory-card.-active .card {
+  .memory-card.-active .card,
+  .memory-card.-score .card {
     display: none;
   }
 
-  .memory-card.-active .card.-front {
+  .memory-card.-active .card.-front,
+  .memory-card.-score .card.-front {
     display: flex;
   }
 
@@ -78,21 +80,33 @@ $head.insertBefore($style, null);
   `;
 };
 
+let score = 0;
 const handleClick = $component => {
-  if (qtdActiveMemoryCard < 2) {
-    $component.classList.toggle("-active");
-  }
+  if (!$component.classList.contains("-active")) {
+    if (qtdActiveMemoryCard < 2) {
+      $component.classList.toggle("-active");
+    }
 
-  if (qtdActiveMemoryCard === 1) {
-    setTimeout(() => {
-      const $activeMemoryCards = document.querySelectorAll('.memory-card.-active');
+    if (qtdActiveMemoryCard === 1) {
+      const $memoryCards = document.querySelectorAll(".memory-card.-active");
 
-      $activeMemoryCards.forEach($memoryCard => {
-        $memoryCard.classList.remove("-active");
-      })
-
-      qtdActiveMemoryCard = 0;
-    }, 1500);
+      if ($memoryCards[0].querySelector(".-front .icon").getAttribute('src') === $memoryCards[1].querySelector(".-front .icon").getAttribute('src')) {
+        score++;
+        console.log('Score', score)
+        $memoryCards.forEach($memoryCard => {
+          $memoryCard.classList.add('-score');
+          $memoryCard.classList.remove('-active');
+        })
+      } else {
+        setTimeout(() => {
+          const $activeMemoryCards = document.querySelectorAll('.memory-card.-active');
+          $activeMemoryCards.forEach($memoryCard => {
+            $memoryCard.classList.remove("-active");
+          })
+  
+          qtdActiveMemoryCard = 0;
+        }, 1500);
+      }     
+    }
   }
 }
-
