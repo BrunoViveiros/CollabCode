@@ -1,0 +1,33 @@
+const flatButton = (function () {
+  const module = {};
+
+  module._style = () => {
+    const $head = document.querySelector("head");
+    const $style = document.createElement("style");
+
+    $style.textContent = `
+      .flat-button {
+        background: #EAE6DA;
+        color: #FFFCEE;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        width: 186px;
+        height: 176px;
+        text-transform: uppercase;
+      }
+    `;
+
+    $head.insertAdjacentElement("beforeend", $style);
+  };
+
+  module.render = () => {
+    module._style();
+
+    return `<button class="flat-button">Login</button>`;
+  }
+
+  return {
+    render: module.render,
+  };
+})();
