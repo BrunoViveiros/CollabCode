@@ -12,9 +12,13 @@ const flatButton = (function () {
         font-size: 24px;
         font-weight: bold;
         border: none;
-        width: 186px;
+        width: 50%;
         height: 176px;
         text-transform: uppercase;
+      }
+
+      .flat-button.-active {
+        background: #f25a70;
       }
     `;
 
@@ -24,7 +28,7 @@ const flatButton = (function () {
   module.render = () => {
     module._style();
 
-    return `<button class="flat-button">Login</button>`;
+    return (text, active="") => `<button class="flat-button ${active}">${text}</button>`;
   }
 
   return {
