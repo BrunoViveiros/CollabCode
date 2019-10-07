@@ -6,7 +6,7 @@ const formLogin = (function() {
     const $style = document.createElement("style");
 
     $style.textContent = `
-      .form-signup {
+      .form-login {
         padding: 0 10% 40px;
       }
     `;
@@ -49,7 +49,7 @@ const formLogin = (function() {
 
   module.render = () => {
     module._style();
-    return `<form class="form-signup" action="" method="POST">${module._children()}</form>`;
+    return `<form class="form-login" action="" method="POST">${module._children()}</form>`;
   };
 
   return {
