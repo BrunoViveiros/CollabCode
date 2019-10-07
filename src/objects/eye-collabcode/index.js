@@ -15,6 +15,9 @@ const eyeCollabcode = (function() {
         cursor: pointer;
         opacity: 0.5;
         transition: opacity 200ms linear;
+        transform: translateY(-200%);
+        float: right;
+        margin-right: 4px;
       }
 
       .eye-collabcode.-active {
