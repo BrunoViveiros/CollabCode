@@ -2,8 +2,8 @@ const linkCollab = (function() {
   const module = {};
 
   module._style = () => {
-    $head = document.querySelector("head");
-    $style = document.createElement("style");
+    const $head = document.querySelector("head");
+    const $style = document.createElement("style");
 
     $style.textContent = `
       .link-collab {
