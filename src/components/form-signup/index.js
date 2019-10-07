@@ -16,25 +16,6 @@ const formSignup = (function() {
 
   module._children = () => {
     const $usernameLabel = labelCollabCode.render("Username");
-<<<<<<< HEAD
-    const $usernameInput = inputCollabcode.render("Your Username");
-
-    const $emailLabel = labelCollabCode.render("E-mail");
-    const $emailInput = inputCollabcode.render("example@mail.com");
-
-    const $passwordLabel = labelCollabCode.render("Password");
-    const $passwordInput = inputCollabcode.render("********");
-
-    const $confirmPasswordLabel = labelCollabCode.render("Confirm password");
-    const $confirmPasswordInput = inputCollabcode.render("********");
-
-    const $btn = btnCollabcode.render("Signup");
-
-    return `
-      ${$usernameLabel}
-      ${$usernameInput}
-
-=======
     const $usernameInput = inputCollabcode.render({
       placeholder: "Your Username",
       type: "text"
@@ -64,7 +45,6 @@ const formSignup = (function() {
         ${$usernameLabel}
         ${$usernameInput}
         
->>>>>>> Aula044
       ${$emailLabel}
       ${$emailInput}
       
@@ -73,15 +53,9 @@ const formSignup = (function() {
       
       ${$confirmPasswordLabel}
       ${$confirmPasswordInput}
-<<<<<<< HEAD
-
-      ${$btn}
-    `;
-=======
       
       ${$btn}
       `;
->>>>>>> Aula044
   };
 
   module.render = () => {
