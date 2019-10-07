@@ -14,29 +14,25 @@ const formSignup = (function() {
     $head.insertAdjacentElement("beforeend", $style);
   };
 
-  module._children = type => {
-    if (type == "signup") {
-      const $usernameLabel = labelCollabCode.render("Username");
-      const $usernameInput = inputCollabcode.render("Your Username", "text");
+  module._children = () => {
+    const $usernameLabel = labelCollabCode.render("Username");
+    const $usernameInput = inputCollabcode.render("Your Username");
 
-      const $emailLabel = labelCollabCode.render("E-mail");
-      const $emailInput = inputCollabcode.render("example@mail.com", "email");
+    const $emailLabel = labelCollabCode.render("E-mail");
+    const $emailInput = inputCollabcode.render("example@mail.com");
 
-      const $passwordLabel = labelCollabCode.render("Password");
-      const $passwordInput = inputCollabcode.render("********", "password");
+    const $passwordLabel = labelCollabCode.render("Password");
+    const $passwordInput = inputCollabcode.render("********");
 
-      const $confirmPasswordLabel = labelCollabCode.render("Confirm password");
-      const $confirmPasswordInput = inputCollabcode.render(
-        "********",
-        "password"
-      );
+    const $confirmPasswordLabel = labelCollabCode.render("Confirm password");
+    const $confirmPasswordInput = inputCollabcode.render("********");
 
-      const $btn = btnCollabcode.render("Signup");
+    const $btn = btnCollabcode.render("Signup");
 
-      return `
-        ${$usernameLabel}
-        ${$usernameInput}
-        
+    return `
+      ${$usernameLabel}
+      ${$usernameInput}
+
       ${$emailLabel}
       ${$emailInput}
       
@@ -45,38 +41,14 @@ const formSignup = (function() {
       
       ${$confirmPasswordLabel}
       ${$confirmPasswordInput}
-      
+
       ${$btn}
-      `;
-    } else if (type == "login") {
-      const $usernameLabel = labelCollabCode.render("Username ou e-mail");
-      const $usernameInput = inputCollabcode.render(
-        "example@email.com",
-        "text"
-      );
-
-      const $passwordLabel = labelCollabCode.render("Password");
-      const $passwordInput = inputCollabcode.render("********", "password");
-
-      const $btn = btnCollabcode.render("Login");
-
-      return `
-          ${$usernameLabel}
-          ${$usernameInput}
-          
-          ${$passwordLabel}
-          ${$passwordInput}
-        
-          ${$btn}
-        `;
-    }
+    `;
   };
 
-  module.render = type => {
+  module.render = () => {
     module._style();
-    return `<form class="form-signup" action="" method="POST">${module._children(
-      type
-    )}</form>`;
+    return `<form class="form-signup" action="" method="POST">${module._children()}</form>`;
   };
 
   return {
