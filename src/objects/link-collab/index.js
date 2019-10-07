@@ -5,11 +5,19 @@ const linkCollab = (function() {
     $head = document.querySelector("head");
     $style = document.createElement("style");
 
-    $style.textContet = `
+    $style.textContent = `
       .link-collab {
-        
+        display: block;
+        color: #3A4042;
+        font-size: 14px;
+        opacity: 0.7;
+        text-decoration: none;
+        margin: 40px 0 60px 0;
+        text-align: right;
       }
     `;
+
+    $head.insertAdjacentElement("beforeend", $style);
   };
 
   module.render = ({ href, content }) => {
