@@ -22,8 +22,7 @@ const inputCollabcode = (function() {
 
   module.render = ({ placeholder = "", type = "text" }) => {
     module._style();
-    return `<input type="text" class="input-collabcode" placeholder="${placeholder ||
-      ""}" />`;
+    return `<input type="${type}" class="input-collabcode" placeholder="${placeholder}" />`;
   };
 
   return {
