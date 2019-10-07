@@ -23,12 +23,12 @@ const eyeCollabcode = (function() {
     console.log("click");
   };
 
-  module.render = () => {
+  module.render = ({ attrFor = "" }) => {
     module._style();
     return `<label
               class="eye-collabcode"
               onClick="eyeCollabcode.handleClick()"
-              for="password"
+              for="${attrFor}"
             >Mostrar senha</label>`;
   };
 
