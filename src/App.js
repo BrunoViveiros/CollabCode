@@ -1,8 +1,15 @@
 import React from "react";
+
+import Logo from "./objects/Logo";
 import Sobre from "./objects/Sobre";
 
 function App() {
-  return <Sobre />;
+  return (
+    <>
+      <Logo />
+      <Sobre />
+    </>
+  );
 }
 
 export default App;
