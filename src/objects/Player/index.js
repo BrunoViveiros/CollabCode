@@ -1,5 +1,5 @@
 import React from "react";
-import playerX from "../../img/X.png";
+import playerX from "../../img/player-X.png";
 
 import "./styles.css";
 
