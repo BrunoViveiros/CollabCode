@@ -1,0 +1,14 @@
+.input {
+  display: inline;
+}
+
+.label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 3px solid var(--color-fourth);
+  border-radius: 5px;
+  cursor: pointer;
+}
