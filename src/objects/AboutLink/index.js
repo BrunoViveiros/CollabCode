@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles.css";
 
-const Sobre = () => {
+const AboutLink = () => {
   return (
-    <a className="sobre" href="#to-do">
+    <a className="aboutLink" href="#to-do">
       Sobre
     </a>
   );
 };
 
-export default Sobre;
+export default AboutLink;
