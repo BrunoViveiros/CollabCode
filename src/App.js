@@ -4,6 +4,7 @@ import "./App.css";
 
 import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
+import AboutLink from "./objects/AboutLink";
 
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
@@ -14,7 +15,9 @@ const App = () => (
     <Hashtag />
     <Checkbox id="show" value="show" content="Mostrar Eventos" />
 
-    <About />
+    <About>
+      <AboutLink />
+    </About>
   </main>
 );
 
