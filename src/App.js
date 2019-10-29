@@ -16,7 +16,7 @@ const App = () => (
     <Checkbox id="show" value="show" content="Mostrar Eventos" />
 
     <About>
-      <AboutLink />
+      <AboutLink className="-light" />
     </About>
   </main>
 );
