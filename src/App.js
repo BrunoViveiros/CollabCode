@@ -16,7 +16,7 @@ const App = () => (
     <Hashtag />
     <Checkbox id="show" value="show" content="Mostrar Eventos" />
 
-    <About>
+    <About className="-active">
       <HeaderInternal />
 
       <ProfileUser />
