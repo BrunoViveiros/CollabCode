@@ -1,8 +1,12 @@
 .about {
   position: absolute;
-  background-color: var(--color-negative);
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: var(--color-negative);
+}
+
+.about > .header-internal {
+  margin-bottom: var(--spacing-very-big);
 }
