@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
 
-const IconClose = () => (
-  <a href="#a" className="icon-close">
+const IconClose = ({ onClick }) => (
+  <a href="#a" className="icon-close" onClick={onClick}>
     <span className="content">Fechar</span>
   </a>
 );
