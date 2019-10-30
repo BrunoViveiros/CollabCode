@@ -1,8 +1,9 @@
 import React from "react";
+import "./styles.css";
 
 const IconClose = () => (
-  <a href="" className="icon-close">
-    Fechar
+  <a href="#a" className="icon-close">
+    <span className="content">Fechar</span>
   </a>
 );
 
