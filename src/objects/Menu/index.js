@@ -1,8 +1,12 @@
 import React from "react";
 import "./styles.css";
 
+const handleClick = () => {
+  console.log("click menu");
+};
+
 const Menu = () => (
-  <a href="#menu" className="menu">
+  <a href="#menu" className="menu" onClick={handleClick}>
     <span className="center">Menu</span>
   </a>
 );
