@@ -8,7 +8,7 @@ import Menu from "../../objects/Menu";
 
 const Header = () => (
   <header className="header">
-    <LogoCollab />
+    <LogoCollab light />
     <AboutLink />
     <Menu />
   </header>
