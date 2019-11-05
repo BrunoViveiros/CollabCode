@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 import Checkbox from "./objects/Checkbox";
-import About from "./objects/About";
+import LayerDark from "./objects/LayerDark";
 
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
@@ -22,11 +22,11 @@ const App = () => {
       <Hashtag />
       <Checkbox id="show" value="show" content="Mostrar Eventos" />
 
-      <About className={activeAbout}>
+      <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
 
         <ProfileUser />
-      </About>
+      </LayerDark>
     </main>
   );
 };
