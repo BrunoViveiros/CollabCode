@@ -4,10 +4,10 @@ import "./styles.css";
 import Label from "../Label";
 import Input from "../Input";
 
-const Checkbox = ({ id = "", value = "", content = "" }) => (
+const InputCheckbox = ({ id = "", value = "", content = "" }) => (
   <>
-    <Input id={id} type="checkbox" value={value} />
+    <Input id={id} type="input-checkbox" value={value} />
     <Label htmlFor={id} content={content} />
   </>
 );
-export default Checkbox;
+export default InputCheckbox;
