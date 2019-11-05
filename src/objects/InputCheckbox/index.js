@@ -6,7 +6,7 @@ import InputGame from "../InputGame";
 
 const InputCheckbox = ({ id = "", value = "", content = "" }) => (
   <>
-    <InputGame id={id} type="input-checkbox" value={value} />
+    <InputGame id={id} type="checkbox" value={value} />
     <LabelGame htmlFor={id} content={content} />
   </>
 );

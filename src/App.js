@@ -20,7 +20,12 @@ const App = () => {
     <main className="app">
       <HeaderGame onClick={handleClickAdd} />
       <HashtagGame />
-      <InputCheckbox id="show" value="show" content="Mostrar Eventos" />
+      <InputCheckbox
+        id="show"
+        value="show"
+        type="checkbox"
+        content="Mostrar Eventos"
+      />
 
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
