@@ -2,11 +2,11 @@ import React from "react";
 import "./styles.css";
 
 import Label from "../Label";
-import Input from "../Input";
+import InputGame from "../InputGame";
 
 const InputCheckbox = ({ id = "", value = "", content = "" }) => (
   <>
-    <Input id={id} type="input-checkbox" value={value} />
+    <InputGame id={id} type="input-checkbox" value={value} />
     <Label htmlFor={id} content={content} />
   </>
 );
