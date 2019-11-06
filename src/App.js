@@ -17,7 +17,7 @@ const App = () => {
   const handleClickRemove = () => setActiveAbout("");
 
   return (
-    <main className="app">
+    <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
       <HashtagGame />
       <InputCheckbox
