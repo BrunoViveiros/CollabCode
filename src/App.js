@@ -17,7 +17,9 @@ const App = () => {
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout("");
-  const handleClick = () => setHistoryGame("-active");
+  const handleClick = () => {
+    setHistoryGame(old => (old === "-active" ? "" : "-active"));
+  };
 
   return (
     <main id="main" className="app">
