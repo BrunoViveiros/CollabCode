@@ -1,5 +1,6 @@
 import React from "react";
 import TagGame from "../../objects/TagGame";
+import "./styles.css";
 
 const HistoryGame = () => (
   <ol className="history-game">
