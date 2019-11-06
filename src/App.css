@@ -1,5 +1,8 @@
 .app {
+  position: relative;
   text-align: center;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 .app > .header-game {
