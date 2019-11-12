@@ -19,18 +19,26 @@ const HashtagGame = () => {
     { id: 9, content: "" }
   ]);
 
-  const handleClick = () => {
-    console.log("Proximo Jogador", nextPlayer);
+  const handleClick = id => {
+    setPlayers(old =>
+      old.map(player =>
+        player.id === id ? { id, content: nextPlayer } : player
+      )
+    );
 
     setNextPlayer(old => (old === "x" ? "o" : "x"));
   };
 
   return (
     <CardGame>
-      <ul className="hashtag-game" onClick={handleClick}>
+      <ul className="hashtag-game">
         {players.map(player => (
-          <li className="item">
-            <PlayerGame player={nextPlayer} />
+          <li
+            key={player.id}
+            className="item"
+            onClick={() => handleClick(player.id)}
+          >
+            <PlayerGame id={player.id} content={player.content} />
           </li>
         ))}
       </ul>
