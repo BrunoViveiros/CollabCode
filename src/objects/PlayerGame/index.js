@@ -5,12 +5,12 @@ import playerO from "../../img/player-O.png";
 import "./styles.css";
 
 const PlayerGame = ({ player = false }) => {
-  const [statePlayer, setStatePlayer] = useState(player);
+  const [statePlayer, setStatePlayer] = useState("");
   const players = [];
   players["x"] = playerX;
   players["o"] = playerO;
 
-  const handleClick = () => setStatePlayer("x");
+  const handleClick = () => setStatePlayer(player);
 
   return (
     <button onClick={handleClick} className="player-game">
