@@ -32,13 +32,13 @@ const HashtagGame = () => {
   return (
     <CardGame>
       <ul className="hashtag-game">
-        {players.map(player => (
+        {players.map(({ id, content }) => (
           <li
-            key={player.id}
+            key={id}
             className="item"
-            onClick={() => handleClick(player.id)}
+            onClick={() => content === "" && handleClick(id)}
           >
-            <PlayerGame id={player.id} content={player.content} />
+            <PlayerGame id={id} content={content} />
           </li>
         ))}
       </ul>
