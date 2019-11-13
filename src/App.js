@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 import InputCheckbox from "./objects/InputCheckbox";
+import WrapperHashtagHistory from "./objects/WrapperHashtagHistory";
 import LayerDark from "./objects/LayerDark";
 
 import HeaderGame from "./components/HeaderGame";
@@ -24,16 +25,17 @@ const App = () => {
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <HashtagGame callback={addHistory} />
-      <InputCheckbox
-        id="show"
-        value="show"
-        type="checkbox"
-        content="Mostrar Eventos"
-      />
+      <WrapperHashtagHistory>
+        <HashtagGame callback={addHistory} />
+        <InputCheckbox
+          id="show"
+          value="show"
+          type="checkbox"
+          content="Mostrar Eventos"
+        />
 
-      <HistoryGame history={history} />
-
+        <HistoryGame history={history} />
+      </WrapperHashtagHistory>
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
 
