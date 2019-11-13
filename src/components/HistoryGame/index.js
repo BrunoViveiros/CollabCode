@@ -2,35 +2,13 @@ import React from "react";
 import TagGame from "../../objects/TagGame";
 import "./styles.css";
 
-const HistoryGame = () => (
+const HistoryGame = ({ history }) => (
   <ol className="history-game">
-    <li className="action">
-      <TagGame content="Adicionou X" />
-    </li>
-    <li className="action">
-      <TagGame content="Adicionou O" />
-    </li>
-    <li className="action">
-      <TagGame content="Adicionou X" />
-    </li>
-    <li className="action">
-      <TagGame content="Adicionou O" />
-    </li>
-    <li className="action">
-      <TagGame content="Adicionou X" />
-    </li>
-    <li className="action">
-      <TagGame content="Adicionou O" />
-    </li>
-    <li className="action">
-      <TagGame content="Adicionou X" />
-    </li>
-    <li className="action">
-      <TagGame content="Adicionou O" />
-    </li>
-    <li className="action">
-      <TagGame className="-end" content="Empate!" />
-    </li>
+    {history.map((content, key) => (
+      <li key={key} className="action">
+        <TagGame content={content} />
+      </li>
+    ))}
   </ol>
 );
 
