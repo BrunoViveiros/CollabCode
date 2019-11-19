@@ -15,6 +15,7 @@ import HistoryGame from "./components/HistoryGame";
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
   const [history, setHistory] = useState([]);
+  const [active, setActive] = useState(false);
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout("");
@@ -22,16 +23,21 @@ const App = () => {
   const addHistory = player =>
     setHistory(old => [...old, `Adiciona ${player.toUpperCase()}`]);
 
+  const showHideHistory = () => {
+    setActive(old => !!!old);
+  };
+
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <WrapperHashtagHistory>
+      <WrapperHashtagHistory active={active}>
         <HashtagGame callback={addHistory} />
         <InputCheckbox
           id="show"
           value="show"
           type="checkbox"
           content="Mostrar Eventos"
+          onClick={showHideHistory}
         />
 
         <HistoryGame history={history} />

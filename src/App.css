@@ -40,9 +40,9 @@
 @media (min-width: 740px) {
   .app > .header-game {
     box-sizing: border-box;
-    width: 100%;
     margin-left: 0;
     margin-right: 0;
+    width: 100%;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -51,7 +51,7 @@
     display: inline-flex;
     justify-content: center;
     position: relative;
-    transition: transform 300ms linear;
+    transition: transform 200ms linear;
   }
 
   .app > .wrapper-hashtag-history.-active {
@@ -60,19 +60,19 @@
 
   .app .label-game {
     position: absolute;
-    top: 370px;
     left: 96px;
+    top: 370px;
   }
 
   .app > .history-game {
+    transition: transform 200ms linear;
     opacity: 0;
-    transition: transform 300ms linear;
     display: block;
+    position: absolute;
+    z-index: -1;
   }
 
   .app > .wrapper-hashtag-history.-active > .history-game {
-    position: absolute;
-    z-index: -1;
     opacity: 1;
     transform: translateX(200%);
   }
