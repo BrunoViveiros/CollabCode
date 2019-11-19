@@ -27,6 +27,10 @@ const App = () => {
     setActive(old => !!!old);
   };
 
+  const changeHistory = key => {
+    setHistory(old => old.slice(0, key + 1));
+  };
+
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
@@ -40,7 +44,7 @@ const App = () => {
           onClick={showHideHistory}
         />
 
-        <HistoryGame history={history} />
+        <HistoryGame history={history} onClick={changeHistory} />
       </WrapperHashtagHistory>
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
