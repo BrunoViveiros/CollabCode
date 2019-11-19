@@ -1,14 +1,14 @@
 .app {
-  position: relative;
   text-align: center;
+  position: relative;
   overflow-x: hidden;
   height: 100vh;
 }
 
 .app > .header-game {
   width: 90vw;
-  min-width: 290px;
   margin: 0 auto 85px;
+  min-width: 260px;
 }
 
 .app .card-game {
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 740px) {
-  .app > .header-game {
+  .app .header-game {
     box-sizing: border-box;
     margin-left: 0;
     margin-right: 0;
@@ -64,7 +64,7 @@
     top: 370px;
   }
 
-  .app > .history-game {
+  .app .history-game {
     transition: transform 200ms linear;
     opacity: 0;
     display: block;
